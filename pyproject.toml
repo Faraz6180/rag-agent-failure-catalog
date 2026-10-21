@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rag-agent-failure-catalog"
+version = "0.1.0"
+description = "A catalog of silent failures in RAG systems and AI agents, with reproduce, detect and mitigate code for each."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Faraz" }]
+keywords = ["rag", "llm", "agents", "evaluation", "reliability"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Topic :: Software Development :: Testing",
+]
+dependencies = []
+
+[project.optional-dependencies]
+live = ["python-dotenv>=1.0", "openai>=1.40", "anthropic>=0.40"]
+dev = ["pytest>=8"]
+
+[tool.setuptools]
+packages = ["common"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

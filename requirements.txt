@@ -1,0 +1,8 @@
+# Offline mode (the default) runs on the Python standard library alone.
+# The packages below are only needed for --live runs against a real model.
+python-dotenv>=1.0
+openai>=1.40
+anthropic>=0.40
+
+# Development
+# pytest>=8
