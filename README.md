@@ -6,7 +6,7 @@
 
 A catalog of common, expensive *silent* failures in RAG systems and AI agents, each with a minimal reproduction, a detector and a mitigation you can lift into your own code.
 
-## Why this exists.........
+## Why this exists..........
 
 Most production incidents in LLM systems are not crashes. The request succeeds, latency is normal, the output is fluent and well-formatted, and it is wrong, incomplete or unsupported. Standard monitoring does not see it: no exception, no status code, no spike. It surfaces later as a customer complaint, a corrected report or a decision made on a number that was never in the source.
 
